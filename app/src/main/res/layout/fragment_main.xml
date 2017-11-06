@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/txtMLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Mobile:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtMValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="010-1234-5678"
+        app:layout_constraintStart_toEndOf="@id/txtMLabel" />
+
+    <TextView
+        android:id="@+id/txtELabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/txtMLabel"
+        app:layout_constraintTop_toBottomOf="@id/txtMLabel" />
+
+    <TextView
+        android:id="@+id/txtEValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="abce.aaa@test.co.kr"
+        app:layout_constraintStart_toEndOf="@id/txtELabel"
+        app:layout_constraintTop_toTopOf="@id/txtELabel" />
+
+    <TextView
+        android:id="@+id/txtWLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Website:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/txtELabel"
+        app:layout_constraintTop_toBottomOf="@id/txtELabel" />
+
+    <TextView
+        android:id="@+id/txtWValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="www.adbc.co.kr"
+        app:layout_constraintStart_toEndOf="@id/txtWLabel"
+        app:layout_constraintTop_toTopOf="@id/txtWLabel" />
+
+    <ImageView
+        android:id="@+id/imgContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/ic_launcher"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/txtWLabel"
+        app:layout_constraintTop_toBottomOf="@id/txtWLabel"
+        app:layout_constraintVertical_bias=".1" />
+
+    <TextView
+        android:id="@+id/txtContents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Content: dsdfadfasdfasdfasdfafgkdljshgsdlhnlsdfjgklsdfjglkdsjfgkldsgldslfgj"
+        app:layout_constraintStart_toEndOf="@id/imgContent"
+        android:layout_marginStart="8dp"
+        app:layout_constraintTop_toTopOf="@id/imgContent" />
+
+
+    <Button
+        android:id="@+id/btnChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="changeView"
+        app:layout_constraintStart_toStartOf="@id/imgContent"
+        app:layout_constraintTop_toBottomOf="@id/imgContent"/>
+
+</android.support.constraint.ConstraintLayout>
